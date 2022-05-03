@@ -56,7 +56,7 @@ class Queue{
         if (this.isEmpty()) {
             return '';
         }
-        let objStr = `${this.items[this.lowestCount]}`;
+        let objStr = `${this.obj[this.lowestCount]}`;
         for (let i = this.lowestCount + 1; i < this.count; i++){
             objStr = `${objStr},${this.obj[i]}`
         }
