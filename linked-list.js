@@ -151,6 +151,7 @@ class LinkedList {
 module.exports = {
   Node,
   LinkedList,
+  defaultEquals,
 };
 
 const list = new LinkedList();
