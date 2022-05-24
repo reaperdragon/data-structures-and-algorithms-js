@@ -26,3 +26,18 @@ const fibonacciRecursive = (n) => {
 
 const data2 = 20;
 console.log(fibonacciRecursive(data2));
+
+//Fibonacci Memoization
+
+function fib(n, res = [0, 1, 1]) {
+  if (res[n]) {
+    return res[n];
+  }
+
+  res[n] = fib(n - 1, res) + fib(n - 2, res);
+  return res[n];
+}
+
+const data3 = 155;
+
+console.log(fib(data3));
